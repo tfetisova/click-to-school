@@ -1,0 +1,33 @@
+.page-header{
+  @include flexCenter;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.logo{
+  display: block;
+  width: 99.29px;
+  height: 65.17px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 52px;
+}
+.header-menu{
+  &__main{
+    @include flexCenter;
+  }
+  &__main>li{
+    margin-right: 40px;
+  }
+  &__main>li>a,
+  &__tel>li>a,
+  &__burger-menu>li>a{
+    text-decoration: none;
+    color: $textColor;
+  }
+  &__tel>li>a{
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+}
