@@ -1,7 +1,7 @@
 .idea/
-    .vscode/
-    *.iml
-    node_modules/**/*
-    .xml
-    package-lock.json
-    psd/
+.vscode/
+*.iml
+node_modules/**/*
+.xml
+package-lock.json
+psd/
