@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*, :after, :before{
+  box-sizing: inherit;
+}
+
+.container{
+  min-width: 320px;
+  max-width: 1330px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
