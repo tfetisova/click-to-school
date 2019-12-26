@@ -79,9 +79,7 @@ gulp.task('build',gulp.series(
     cssMinify,
     jsBuild,
     jsMinify,
-    imgMinify
-
-));
-gulp.task('dev',gulp.series(
+    imgMinify,
     watcher
+
 ));
