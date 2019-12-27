@@ -105,8 +105,7 @@ html {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 18px;
-  padding-bottom: 18px; }
+  padding: 18px 20px; }
 
 .logo {
   display: block;
@@ -142,11 +141,69 @@ html {
 
 .header-menu__main > li > a,
 .header-menu__tel > li > a,
-.header-menu__burger-menu > li > a {
+.header-menu__burger-menu > li a {
   text-decoration: none;
   color: #1A394B; }
+
+.header-menu__tel {
+  margin-right: 28px; }
 
 .header-menu__tel > li > a {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 0.05em; }
+
+.header-menu__burger-btn {
+  border: 2px solid transparent;
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #77D2FF), to(rgba(246, 88, 107, 0.57)));
+  -webkit-border-image: -webkit-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  -moz-border-image: -moz-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  -o-border-image: -o-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #77D2FF), to(rgba(246, 88, 107, 0.57)));
+  border-image: linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 7px;
+  padding: 6px 9px; }
+
+.header-menu__burger-btn-letters {
+  text-transform: uppercase;
+  color: #938D8D;
+  font-size: 11px;
+  text-align: center; }
+
+.header-menu__burger-menu {
+  padding: 42px 86px;
+  opacity: 0;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  -webkit-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+  background-color: #FFFFFF;
+  border: 2px solid transparent;
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #77D2FF), to(rgba(246, 88, 107, 0.57)));
+  -webkit-border-image: -webkit-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  -moz-border-image: -moz-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  -o-border-image: -o-linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #77D2FF), to(rgba(246, 88, 107, 0.57)));
+  border-image: linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  border-image-slice: 1; }
+
+.header-menu__burger-menu.active {
+  opacity: 1;
+  right: 0; }
+
+.header-menu__burger-menu > li a {
+  font-size: 24px;
+  line-height: 300%; }
+
+.header-menu__burger-menu > li > a:first-child {
+  font-weight: 500; }
