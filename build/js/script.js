@@ -1,14 +1,1 @@
-const burgerMenuBtn = document.querySelector('.header-menu__burger-btn');
-const burgerMenu = document.querySelector('.header-menu__burger-menu');
-burgerMenuBtn.addEventListener('click', ()=>{
-  burgerMenu.classList.add('active');
-});
-document.body.addEventListener('click',(e)=>{
-  console.log(e.target);
-  if(!e.target.classList.contains('header-menu__burger-btn') && !e.target.classList.contains('header-menu__burger-btn-letters')){
-    if(burgerMenu.classList.contains('active')){
-      burgerMenu.classList.remove('active')
-    }
-  }
-});
-
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--)d[c.toString(a)]=k[c]||c.toString(a);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('a b=8.9(\'.3-2-6\');a 1=8.9(\'.3-2-l\');b.d(\'f\',()=>{1.0.j(\'4\')});8.h.d(\'f\',(e)=>{g.i(e.7);c(!e.7.0.5(\'3-2-6\')&&!e.7.0.5(\'3-2-6-m\')){c(1.0.5(\'4\')){1.0.k(\'4\')}}});',23,23,'classList|burgerMenu|menu__burger|header|active|contains|btn|target|document|querySelector|const|burgerMenuBtn|if|addEventListener||click|console|body|log|add|remove|menu|letters'.split('|'),0,{}))

@@ -13,7 +13,7 @@ html {
 
 .container {
   min-width: 320px;
-  max-width: 1330px;
+  max-width: 1270px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -25,7 +25,7 @@ html {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   padding: 6px;
@@ -89,7 +89,7 @@ html {
   -o-transform: matrix(-1, 0, 0, 1, 0, 0);
   transform: matrix(-1, 0, 0, 1, 0, 0); }
 
-.page-header {
+.page-header > .container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -105,7 +105,8 @@ html {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 18px 20px; }
+  padding-top: 18px;
+  padding-bottom: 18px; }
 
 .logo {
   display: block;
@@ -175,12 +176,14 @@ html {
   text-transform: uppercase;
   color: #938D8D;
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 500; }
 
 .header-menu__burger-menu {
   padding: 42px 86px;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   right: -100%;
   top: 0;
   -webkit-transition: all .7s ease-in-out;
@@ -207,3 +210,44 @@ html {
 
 .header-menu__burger-menu > li > a:first-child {
   font-weight: 500; }
+
+.page-footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0.9)), color-stop(15%, rgba(255, 255, 255, 0.8)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(30%, rgba(255, 255, 255, 0))), url("../img/footer-bg.png");
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 30%), url("../img/footer-bg.png");
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 30%), url("../img/footer-bg.png");
+  background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 30%), url("../img/footer-bg.png");
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 30%), url("../img/footer-bg.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .page-footer > .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    padding-top: 133px;
+    padding-bottom: 66px; }
+  .page-footer__title {
+    text-transform: uppercase;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 13px; }
+  .page-footer__text {
+    margin-bottom: 13px;
+    line-height: 26px; }
+
+.main-btn__cont--footer {
+  width: 279px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.main-btn__cont > .main-btn__bg {
+  padding: 5px; }
+
+.main-btn__cont > .main-btn__inner-text {
+  padding: 5px; }
