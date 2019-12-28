@@ -1,0 +1,51 @@
+.page-footer{
+  background: linear-gradient(
+          to bottom,
+          rgba(255,255,255, 1) 0%,
+          rgba(255,255,255, .9) 10%,
+          rgba(255,255,255, .8) 15%,
+          rgba(255,255,255, .5) 20%,
+          rgba(255,255,255, .2) 25%,
+          rgba(255,255,255, 0) 30%
+  ), url('../img/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &>.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    padding-top: 133px;
+    padding-bottom: 66px;
+  }
+  &__title{
+    text-transform: uppercase;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 13px;
+  }
+  &__text{
+    margin-bottom: 13px;
+    line-height: 26px;
+  }
+
+}
+.main-btn{
+  &__cont{
+    &--footer{
+      width: 279px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    &>.main-btn__bg{
+      padding: 5px;
+    }
+    &>.main-btn__inner-text{
+      padding: 5px;
+    }
+  }
+}

@@ -14,7 +14,7 @@ html{
 
 .container{
   min-width: 320px;
-  max-width: 1330px;
+  max-width: 1270px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -26,7 +26,7 @@ html{
     width: 335.8px;
     border: 0.5px solid #F57AA1;
     border-radius: 50px;
-    font-family: Gotham Pro;
+    font-family: "Gotham Pro", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     padding: 6px;
@@ -64,4 +64,5 @@ html{
 
 
 }
-@import "sections/main-header";
+@import "sections/header";
+@import "sections/footer";
