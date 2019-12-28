@@ -117,8 +117,12 @@ html {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 52px; }
+  background-repeat: no-repeat; }
+  .logo--header {
+    margin-right: 52px; }
+  .logo--footer {
+    margin-left: 20px;
+    margin-right: 20px; }
 
 .header-menu__main {
   display: -webkit-box;
@@ -140,9 +144,12 @@ html {
 .header-menu__main > li {
   margin-right: 40px; }
 
-.header-menu__main > li > a,
-.header-menu__tel > li > a,
-.header-menu__burger-menu > li a {
+.header-menu__main > li > a:link,
+.header-menu__main > li > a:visited,
+.header-menu__tel > li > a:link,
+.header-menu__tel > li > a:visited,
+.header-menu__burger-menu > li a:link,
+.header-menu__burger-menu > li a:visited {
   text-decoration: none;
   color: #1A394B; }
 
@@ -204,7 +211,8 @@ html {
   opacity: 1;
   right: 0; }
 
-.header-menu__burger-menu > li a {
+.header-menu__burger-menu > li a:link,
+.header-menu__burger-menu > li a:visited {
   font-size: 24px;
   line-height: 300%; }
 
@@ -223,12 +231,26 @@ html {
   background-size: cover;
   background-repeat: no-repeat; }
   .page-footer > .container {
+    position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     padding-top: 133px;
     padding-bottom: 66px; }
+  .page-footer__support {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .page-footer__title {
     text-transform: uppercase;
     font-family: "Gotham Pro", sans-serif;
@@ -239,12 +261,97 @@ html {
   .page-footer__text {
     margin-bottom: 13px;
     line-height: 26px; }
+  .page-footer__tel:link, .page-footer__tel:visited {
+    font-weight: 500;
+    text-decoration: none;
+    color: #1A394B;
+    line-height: 174.7%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .page-footer__menu > ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .page-footer__menu > ul > li > a:link,
+    .page-footer__menu > ul > li > a:visited {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #1A394B;
+      margin-bottom: 35px;
+      text-align: center; }
+    .page-footer__menu > ul > li:last-child > a {
+      margin-bottom: 0; }
+  .page-footer__info {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+    .page-footer__info > .page-footer__title {
+      grid-column: 1 / span 2; }
+    .page-footer__info > .page-footer__tel {
+      text-align: right; }
+  .page-footer__logo {
+    grid-column: 1 / span 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .page-footer__logo-text {
+    font-family: Granite, sans-serif;
+    font-size: 48px;
+    line-height: 90px;
+    letter-spacing: 0.1em; }
+  .page-footer__copyright {
+    position: absolute;
+    bottom: 23px;
+    right: 0;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    color: #C4C4C4; }
 
 .main-btn__cont--footer {
   width: 279px;
   font-weight: bold;
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 10%; }
 
 .main-btn__cont > .main-btn__bg {
   padding: 5px; }

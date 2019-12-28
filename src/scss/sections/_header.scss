@@ -11,7 +11,13 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 52px;
+  &--header {
+    margin-right: 52px;
+  }
+  &--footer{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .header-menu{
   &__main{
@@ -20,9 +26,12 @@
   &__main>li{
     margin-right: 40px;
   }
-  &__main>li>a,
-  &__tel>li>a,
-  &__burger-menu>li a{
+  &__main>li>a:link,
+  &__main>li>a:visited,
+  &__tel>li>a:link,
+  &__tel>li>a:visited,
+  &__burger-menu>li a:link,
+  &__burger-menu>li a:visited{
     text-decoration: none;
     color: $textColor;
   }
@@ -67,7 +76,8 @@
     opacity: 1;
     right: 0;
   }
-  &__burger-menu>li a{
+  &__burger-menu>li a:link,
+  &__burger-menu>li a:visited{
     font-size: 24px;
     line-height: 300%;
   }

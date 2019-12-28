@@ -12,12 +12,17 @@
   background-repeat: no-repeat;
 
   &>.container{
+    position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     padding-top: 133px;
     padding-bottom: 66px;
+  }
+  &__support{
+    display: flex;
+    flex-direction: column;
   }
   &__title{
     text-transform: uppercase;
@@ -31,7 +36,67 @@
     margin-bottom: 13px;
     line-height: 26px;
   }
+  &__tel:link,
+  &__tel:visited{
+    font-weight: 500;
+    text-decoration: none;
+    color: $textColor;
+    line-height: 174.7%;
+    align-items: center;
+  }
+  &__menu{
+    &>ul{
+      @include flexCenter;
+      flex-direction: column;
+      &>li>a:link,
+      &>li>a:visited{
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $textColor;
+        margin-bottom: 35px;
+        text-align: center;
+      }
+      &>li:last-child>a{
+        margin-bottom:0;
+      }
+    }
+  }
+  &__info{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    &>.page-footer__title{
+      grid-column: 1 / span 2;
+    }
+    &>.page-footer__tel{
+      text-align: right;
+    }
+  }
+  &__logo{
+    grid-column: 1 / span 2;
+    @include flexCenter;
+  }
+  &__logo-text{
+    font-family: Granite, sans-serif;
+    font-size: 48px;
+    line-height: 90px;
+    letter-spacing: 0.1em;
+  }
+  &__copyright{
+    position: absolute;
+    bottom: 23px;
+    right: 0;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    color: #C4C4C4;
 
+
+  }
 }
 .main-btn{
   &__cont{
@@ -40,6 +105,7 @@
       font-weight: bold;
       font-size: 16px;
       text-transform: uppercase;
+      margin-top: 10%;
     }
     &>.main-btn__bg{
       padding: 5px;
