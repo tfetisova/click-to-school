@@ -80,7 +80,7 @@
     @include flexCenter;
   }
   &__logo-text{
-    font-family: Granite, sans-serif;
+    font-family: $logoText;
     font-size: 48px;
     line-height: 90px;
     letter-spacing: 0.1em;

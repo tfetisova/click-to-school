@@ -1,5 +1,30 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Black.ttf") format("truetype"), url("../fonts/GothamPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
 html {
   height: 100%;
+  font-family: 'Gotham Pro', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11,6 +36,9 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
+
+body {
+  min-height: 100vh; }
 
 .container {
   min-width: 320px;
@@ -239,7 +267,9 @@ html {
 
 .header-menu__burger-menu.active {
   opacity: 1;
-  right: 0; }
+  right: 0;
+  z-index: 100;
+  background-color: #fff; }
 
 .header-menu__burger-menu > li a:link,
 .header-menu__burger-menu > li a:visited {
