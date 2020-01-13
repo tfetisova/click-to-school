@@ -99,7 +99,6 @@ const watcher = ()=> {
     gulp.watch(path.src.js, jsBuild).on('change',browserSync.reload);
     gulp.watch(path.src.js, jsMinify).on('change',browserSync.reload);
     gulp.watch(path.src.img, imgMinify).on('change',browserSync.reload);
-
 };
 gulp.task('build',gulp.series(
     cleanBuild,
