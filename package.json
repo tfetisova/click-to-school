@@ -1,5 +1,5 @@
 {
-  "name": "step-project-forkio",
+  "name": "Click to school",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Olga_Vak/step-project-forkio.git"
+    "url": "https://github.com/tfetisova/click-to-school.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/Olga_Vak/step-project-forkio/issues"
+    "url": "https://github.com/tfetisova/click-to-school/issues"
   },
-  "homepage": "https://gitlab.com/Olga_Vak/step-project-forkio#readme",
+  "homepage": "https://github.com/tfetisova/click-to-school",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

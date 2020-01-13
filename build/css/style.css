@@ -11,6 +11,9 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+body {
+  min-height: 100vh; }
+
 .container {
   min-width: 320px;
   max-width: 1270px;
@@ -209,7 +212,9 @@ html {
 
 .header-menu__burger-menu.active {
   opacity: 1;
-  right: 0; }
+  right: 0;
+  z-index: 100;
+  background-color: #fff; }
 
 .header-menu__burger-menu > li a:link,
 .header-menu__burger-menu > li a:visited {
@@ -253,7 +258,6 @@ html {
     flex-direction: column; }
   .page-footer__title {
     text-transform: uppercase;
-    font-family: "Gotham Pro", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 35px;
@@ -340,7 +344,6 @@ html {
     position: absolute;
     bottom: 23px;
     right: 0;
-    font-family: "Gotham Pro", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 17px;
