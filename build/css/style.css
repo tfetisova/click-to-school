@@ -24,7 +24,6 @@
 
 html {
   height: 100%;
-  font-family: 'Gotham Pro', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -392,7 +391,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .page-footer__logo-text {
-    font-family: Granite, sans-serif;
+    font-family: "Granite", serif;
     font-size: 48px;
     line-height: 90px;
     letter-spacing: 0.1em; }
