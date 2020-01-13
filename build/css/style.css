@@ -24,7 +24,6 @@
 
 html {
   height: 100%;
-  font-family: 'Gotham Pro', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -37,7 +36,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 .container {
   min-width: 320px;
@@ -218,7 +218,7 @@ body {
 .header-menu__burger-menu {
   padding: 42px 86px;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   right: -100%;
   top: 0;
   -webkit-transition: all .7s ease-in-out;

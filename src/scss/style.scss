@@ -34,12 +34,12 @@ html{
   font-size: 16px;
   color: $textColor;
 }
-
 *, :after, :before{
   box-sizing: inherit;
 }
 body{
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .container{
   min-width: 320px;
