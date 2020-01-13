@@ -1,0 +1,10 @@
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin gradientBorder{
+  border: 2px solid transparent;
+  border-image: linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
+  border-image-slice: 1;
+}

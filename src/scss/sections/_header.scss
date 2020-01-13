@@ -1,0 +1,87 @@
+.page-header>.container{
+  @include flexCenter;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+}
+.logo{
+  display: block;
+  width: 99.29px;
+  height: 65.17px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &--header {
+    margin-right: 52px;
+  }
+  &--footer{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.header-menu{
+  &__main{
+    @include flexCenter;
+  }
+  &__main>li{
+    margin-right: 40px;
+  }
+  &__main>li>a:link,
+  &__main>li>a:visited,
+  &__tel>li>a:link,
+  &__tel>li>a:visited,
+  &__burger-menu>li a:link,
+  &__burger-menu>li a:visited{
+    text-decoration: none;
+    color: $textColor;
+  }
+  &__tel{
+    margin-right: 28px;
+  }
+  &__tel>li>a{
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+  &__burger-btn{
+    @include gradientBorder;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 7px;
+    padding: 6px 9px;
+  }
+  &__burger-btn-letters{
+    text-transform: uppercase;
+    color: #938D8D;
+    font-size: 11px;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+  }
+  &__burger-menu{
+    padding: 42px 86px;
+    opacity: 0;
+    position: fixed;
+    right: -100%;
+    top:0;
+    transition: all .7s ease-in-out;
+    background-color: #FFFFFF;
+    @include gradientBorder;
+  }
+  &__burger-menu.active{
+    opacity: 1;
+    right: 0;
+  }
+  &__burger-menu>li a:link,
+  &__burger-menu>li a:visited{
+    font-size: 24px;
+    line-height: 300%;
+  }
+  &__burger-menu>li>a:first-child{
+    font-weight: 500;
+  }
+}

@@ -19,7 +19,7 @@ const path = {
     },
     src: {
         scss: 'src/scss/**/*.scss',
-        js: 'src/js/*.js',
+        js: 'src/js/**/*.js',
         img: 'src/img/**/*'
     },
     clean: './build/'
@@ -46,22 +46,13 @@ const cleanBuild = ()=>{
     return gulp.src(path.clean, {allowEmpty:true})
         .pipe(clean())
 };
-
-const watcher = ()=> {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        }
-    });
-    gulp.watch(path.src.scss, scssBuild).on('change',browserSync.reload);
-    gulp.watch(path.src.js, jsBuild).on('change',browserSync.reload);
-    gulp.watch(path.src.img, imgMinify).on('change',browserSync.reload);
-};
 const jsMinify = ()=> {
-        return gulp.src(path.src.js)
+        return gulp.src('build/js/script.js')
             .pipe(minifyjs())
             .pipe(gulp.dest(path.build.js));
 };
+
+
 const cssMinify =()=> {
     return gulp.src(path.build.css)
         .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -72,16 +63,24 @@ const imgMinify =()=>{
         .pipe(imagemin())
         .pipe(gulp.dest(path.build.img))
 };
-
+const watcher = ()=> {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
+    gulp.watch(path.src.scss, scssBuild).on('change',browserSync.reload);
+    gulp.watch(path.src.js, jsBuild).on('change',browserSync.reload);
+    gulp.watch(path.src.js, jsMinify).on('change',browserSync.reload);
+    gulp.watch(path.src.img, imgMinify).on('change',browserSync.reload);
+};
 gulp.task('build',gulp.series(
     cleanBuild,
     scssBuild,
     cssMinify,
     jsBuild,
     jsMinify,
-    imgMinify
-
-));
-gulp.task('dev',gulp.series(
+    imgMinify,
     watcher
+
 ));
