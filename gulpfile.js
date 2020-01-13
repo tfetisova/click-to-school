@@ -6,23 +6,45 @@ const gulp = require('gulp'),
     browserSync = require('browser-sync'),
     minifyjs = require('gulp-js-minify'),
     cleanCSS = require('gulp-clean-css'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    rigger = require('gulp-rigger');
 
 
 
 const path = {
     build: {
+        html: 'build/',
         css: 'build/css/',
         js: 'build/js/',
-        img: 'build/img/'
+        img: 'build/img/',
+        fonts: 'build/fonts/'
 
     },
     src: {
+        html: 'src/**/*.html',
         scss: 'src/scss/**/*.scss',
         js: 'src/js/**/*.js',
-        img: 'src/img/**/*'
+        img: 'src/img/**/*',
+        fonts: 'src/fonts/**/*'
     },
     clean: './build/'
+};
+const htmlBuild = async function(){
+    await gulp.src(path.src.html)
+      .pipe(rigger())
+      .pipe(gulp.dest(path.build.html))
+    //rigger это наш плагин, позволяющий использовать такую конструкцию для импорта файлов:
+    // //= template/footer.html
+    //пример:
+    // <body>
+    // //= template/header.html
+    //
+    // <section class="content">
+    //   Content
+    //   </section>
+    //
+    //   //= template/footer.html
+    //   </body>
 };
 
 const scssBuild = ()=>{
@@ -51,7 +73,10 @@ const jsMinify = ()=> {
             .pipe(minifyjs())
             .pipe(gulp.dest(path.build.js));
 };
-
+const fontsBuild = async function() {
+    await gulp.src(path.src.fonts)
+      .pipe(gulp.dest(path.build.fonts))
+};
 
 const cssMinify =()=> {
     return gulp.src(path.build.css)
@@ -66,16 +91,20 @@ const imgMinify =()=>{
 const watcher = ()=> {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: './build'
         }
     });
+    gulp.watch(path.src.html, htmlBuild).on('change',browserSync.reload);
     gulp.watch(path.src.scss, scssBuild).on('change',browserSync.reload);
     gulp.watch(path.src.js, jsBuild).on('change',browserSync.reload);
     gulp.watch(path.src.js, jsMinify).on('change',browserSync.reload);
     gulp.watch(path.src.img, imgMinify).on('change',browserSync.reload);
+
 };
 gulp.task('build',gulp.series(
     cleanBuild,
+    htmlBuild,
+    fontsBuild,
     scssBuild,
     cssMinify,
     jsBuild,
