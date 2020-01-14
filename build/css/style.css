@@ -419,6 +419,10 @@ body {
   padding: 5px; }
 
 .page-background {
+  background-image: url("../img/sky-bg.png");
+  background-repeat: repeat; }
+
+.description-image-top {
   height: 426px; }
 
 .page-description {
@@ -426,4 +430,10 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 50px;
-  color: #1A394B; }
+  color: #1A394B;
+  text-indent: 50px; }
+  .page-description > p:last-child {
+    padding-top: 70px; }
+
+.description-image-bottom {
+  height: 565px; }
