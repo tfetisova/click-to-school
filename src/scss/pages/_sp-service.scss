@@ -1,0 +1,22 @@
+.page-background {
+    background-image: url('../img/sky-bg.png');
+    background-repeat: repeat;
+    // background-size: cover;
+}
+.description-image-top {
+    height: 426px;
+}
+.page-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 50px;
+    color: #1A394B;
+    text-indent: 50px;
+    &>p:last-child{
+        padding-top: 70px;
+    }
+}
+.description-image-bottom {
+    height: 565px;
+}

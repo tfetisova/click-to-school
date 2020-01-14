@@ -29,13 +29,15 @@
   font-style: normal; }
 
 html {
+  height: 100%;
   font-family: 'Gotham Pro', sans-serif;
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
-  color: #1A394B; }
+  color: #1A394B;
+ }
 
 *, :after, :before {
   -webkit-box-sizing: inherit;
@@ -123,6 +125,35 @@ body {
   -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
   -o-transform: matrix(-1, 0, 0, 1, 0, 0);
   transform: matrix(-1, 0, 0, 1, 0, 0); }
+
+.section-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 90px;
+  color: #131E26;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+  .section-title::before {
+    content: url("../img/Group 753.svg");
+    position: absolute;
+    left: 65px;
+    top: -5px; }
+  .section-title::after {
+    content: url("../img/Group 754.svg");
+    position: absolute;
+    right: 65px;
+    top: -5px; }
 
 .page-header > .container {
   display: -webkit-box;
@@ -395,6 +426,7 @@ body {
     flex-direction: column; }
   .page-footer__title {
     text-transform: uppercase;
+    font-family: "Gotham Pro", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 35px;
@@ -473,7 +505,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .page-footer__logo-text {
-    font-family: Granite, sans-serif;
+    font-family: "Granite", serif;
     font-size: 48px;
     line-height: 90px;
     letter-spacing: 0.1em; }
@@ -481,6 +513,7 @@ body {
     position: absolute;
     bottom: 23px;
     right: 0;
+    font-family: "Gotham Pro", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 17px;
@@ -498,3 +531,23 @@ body {
 
 .main-btn__cont > .main-btn__inner-text {
   padding: 5px; }
+
+.page-background {
+  background-image: url("../img/sky-bg.png");
+  background-repeat: repeat; }
+
+.description-image-top {
+  height: 426px; }
+
+.page-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  color: #1A394B;
+  text-indent: 50px; }
+  .page-description > p:last-child {
+    padding-top: 70px; }
+
+.description-image-bottom {
+  height: 565px; }
