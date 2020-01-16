@@ -368,6 +368,19 @@ body {
     z-index: 5; }
   .short-about .section-title {
     margin-bottom: 105px; }
+  .short-about__section-img {
+    background-image: url("../img/short-about-img.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 274.65px;
+    height: 351.09px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0; }
   .short-about__item-wrap {
     list-style-type: none;
     counter-reset: num;
@@ -375,7 +388,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 53px;
-    grid-row-gap: 86px; }
+    grid-row-gap: 86px;
+    margin-bottom: 80px; }
     .short-about__item-wrap > li {
       background: #FFFFFF;
       border: 0.5px solid #77D2FF;
