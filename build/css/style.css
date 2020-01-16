@@ -151,9 +151,6 @@ body {
     position: absolute;
     right: 65px;
     top: -5px; }
-  .section-title--smaller {
-    font-weight: 500;
-    font-size: 36px; }
 
 .section-subtitle {
   font-style: normal;
@@ -395,7 +392,7 @@ body {
   .short-about > .container {
     position: relative;
     z-index: 5; }
-  .short-about .section-title {
+  .short-about .section-subtitle {
     margin-bottom: 105px; }
   .short-about__section-img {
     background-image: url("../img/short-about-img.png");
