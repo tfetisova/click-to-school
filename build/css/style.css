@@ -92,7 +92,7 @@ body {
   border-radius: 50px; }
 
 .main-btn__inner-text {
-  padding: 12px;
+  padding: 16px;
   width: 100%;
   background: -webkit-linear-gradient(9.29deg, rgba(255, 255, 255, 0.02) 4.16%, rgba(196, 196, 196, 0) 11.39%), -webkit-linear-gradient(9.29deg, rgba(255, 255, 255, 0.15) 4.16%, rgba(196, 196, 196, 0) 11.39%);
   background: -moz-linear-gradient(9.29deg, rgba(255, 255, 255, 0.02) 4.16%, rgba(196, 196, 196, 0) 11.39%), -moz-linear-gradient(9.29deg, rgba(255, 255, 255, 0.15) 4.16%, rgba(196, 196, 196, 0) 11.39%);
@@ -206,7 +206,7 @@ body {
   justify-content: center; }
 
 .header-menu__main > li {
-  margin-right: 40px; }
+  margin-right: 25px; }
 
 .header-menu__main > li > a:link,
 .header-menu__main > li > a:visited,
@@ -218,7 +218,7 @@ body {
   color: #1A394B; }
 
 .header-menu__tel {
-  margin-right: 28px; }
+  margin-right: 15px; }
 
 .header-menu__tel > li > a {
   font-size: 13px;
@@ -284,6 +284,52 @@ body {
 
 .header-menu__burger-menu > li > a:first-child {
   font-weight: 500; }
+
+.hero {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 83px;
+  padding-bottom: 100px;
+  position: relative; }
+  .hero:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(255, 255, 255, 0.4)), color-stop(90%, rgba(255, 255, 255, 0.8)), to(white));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.4) 85%, rgba(255, 255, 255, 0.8) 90%, white 100%);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.4) 85%, rgba(255, 255, 255, 0.8) 90%, white 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.4) 85%, rgba(255, 255, 255, 0.8) 90%, white 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.4) 85%, rgba(255, 255, 255, 0.8) 90%, white 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; }
+  .hero__text-wrap {
+    width: 38%;
+    position: relative;
+    z-index: 5; }
+  .hero__title {
+    font-family: "Granite", serif;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 90px;
+    letter-spacing: 0.1em;
+    margin-bottom: 34px; }
+  .hero__desc {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 45px;
+    margin-bottom: 40px; }
 
 .map {
   padding-top: 100px;
@@ -389,6 +435,7 @@ body {
   .gradient-container:after {
     content: '';
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     bottom: 0;
