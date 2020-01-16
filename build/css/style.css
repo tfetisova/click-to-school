@@ -30,14 +30,12 @@
 
 html {
   height: 100%;
-  font-family: 'Gotham Pro', sans-serif;
-  height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
   color: #1A394B;
- }
+  font-family: "Gotham Pro", sans-serif; }
 
 *, :after, :before {
   -webkit-box-sizing: inherit;
@@ -290,28 +288,7 @@ body {
 .map {
   padding-top: 100px;
   padding-bottom: 100px;
-  min-height: 1200px;
-  position: relative; }
-  .map:after {
-    content: '';
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(7%, rgba(255, 255, 255, 0.9)), color-stop(9%, rgba(255, 255, 255, 0.8)), color-stop(12%, rgba(255, 255, 255, 0.4)), color-stop(15%, rgba(255, 255, 255, 0.2)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(255, 255, 255, 0.6)), color-stop(85%, rgba(255, 255, 255, 0.8)), color-stop(90%, rgba(255, 255, 255, 0.9)), to(white));
-    background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
-    background: -moz-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
-    background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
-    background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%; }
+  min-height: 1200px; }
   .map__location {
     display: -webkit-box;
     display: -webkit-flex;
@@ -391,6 +368,28 @@ body {
     letter-spacing: 0.05em; }
     .map__contacts-item-text--w55 {
       width: 55%; }
+
+.gradient-container {
+  position: relative; }
+  .gradient-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(7%, rgba(255, 255, 255, 0.9)), color-stop(9%, rgba(255, 255, 255, 0.8)), color-stop(12%, rgba(255, 255, 255, 0.4)), color-stop(15%, rgba(255, 255, 255, 0.2)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(255, 255, 255, 0.6)), color-stop(85%, rgba(255, 255, 255, 0.8)), color-stop(90%, rgba(255, 255, 255, 0.9)), to(white));
+    background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -moz-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; }
 
 .page-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0.9)), color-stop(15%, rgba(255, 255, 255, 0.8)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(30%, rgba(255, 255, 255, 0))), url("../img/footer-bg.png");
