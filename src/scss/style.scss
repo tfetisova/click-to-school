@@ -79,7 +79,7 @@ body{
     border-radius: 50px;
   }
   &__inner-text{
-    padding: 12px;
+    padding: 16px;
     width: 100%;
     background: linear-gradient(80.71deg, rgba(255, 255, 255, 0.02) 4.16%, rgba(196, 196, 196, 0) 11.39%), linear-gradient(80.71deg, rgba(255, 255, 255, 0.15) 4.16%, rgba(196, 196, 196, 0) 11.39%);
     border-radius: 50px;
@@ -124,6 +124,7 @@ body{
 }
 
 @import "sections/header";
+@import "sections/hero-section";
 @import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";
