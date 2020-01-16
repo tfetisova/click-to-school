@@ -102,7 +102,6 @@ body{
 //section-title style
 .section-title{
   font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 90px;
   color: #131E26;
@@ -151,6 +150,7 @@ body{
 
 @import "sections/header";
 @import "sections/hero-section";
+@import "sections/short-about";
 @import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";
