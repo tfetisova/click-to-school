@@ -126,7 +126,6 @@ body {
 
 .section-title {
   font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 90px;
   color: #131E26;
@@ -152,6 +151,9 @@ body {
     position: absolute;
     right: 65px;
     top: -5px; }
+  .section-title--smaller {
+    font-weight: 500;
+    font-size: 36px; }
 
 .page-header > .container {
   display: -webkit-box;
@@ -330,6 +332,91 @@ body {
     font-size: 24px;
     line-height: 45px;
     margin-bottom: 40px; }
+
+.short-about {
+  padding-top: 60px;
+  padding-bottom: 125px;
+  position: relative;
+  background-image: url("../img/short-about-bg.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .short-about:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(7%, rgba(255, 255, 255, 0.9)), color-stop(9%, rgba(255, 255, 255, 0.8)), color-stop(12%, rgba(255, 255, 255, 0.4)), color-stop(15%, rgba(255, 255, 255, 0.2)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(255, 255, 255, 0.6)), color-stop(85%, rgba(255, 255, 255, 0.8)), color-stop(90%, rgba(255, 255, 255, 0.9)), to(white));
+    background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -moz-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; }
+  .short-about > .container {
+    position: relative;
+    z-index: 5; }
+  .short-about .section-title {
+    margin-bottom: 105px; }
+  .short-about__item-wrap {
+    list-style-type: none;
+    counter-reset: num;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 53px;
+    grid-row-gap: 86px; }
+    .short-about__item-wrap > li {
+      background: #FFFFFF;
+      border: 0.5px solid #77D2FF;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      padding: 40px 50px;
+      font-size: 18px;
+      line-height: 30px;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .short-about__item-wrap > li::before {
+      content: "0" counter(num);
+      counter-increment: num;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 29px;
+      letter-spacing: 0.14em;
+      color: #77D2FF;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      left: 0; }
 
 .map {
   padding-top: 100px;

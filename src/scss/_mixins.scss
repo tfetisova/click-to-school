@@ -55,3 +55,25 @@
   height: 100%;
   width: 100%;
 }
+@mixin gradient-top{
+  content:'';
+  position: absolute;
+  z-index: 0;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 0;
+  background: linear-gradient(
+                  to top,
+                  rgba(255,255,255, .1) 65%,
+                  rgba(255,255,255, .3) 75%,
+                  rgba(255,255,255, .4) 80%,
+                  rgba(255,255,255, .6) 85%,
+                  rgba(255,255,255, .8) 90%,
+                  rgba(255,255,255, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
