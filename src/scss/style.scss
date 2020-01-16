@@ -99,6 +99,7 @@ body{
   }
 }
 
+//section-title style
 .section-title{
   font-style: normal;
   font-size: 48px;
@@ -125,6 +126,31 @@ body{
     font-size: 36px;
   }
 }
+//style for subtitle
+.section-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 90px;
+  color: #1A394B;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  &::before{
+    content: url('../img/subtitle-dots-left.svg');
+    position: absolute;
+    left: 327px;
+    top: -5px;
+  }
+  &::after{
+    content: url('../img/subtitle-dots-right.svg');
+    position: absolute;
+    right: 327px;
+    top: -5px;
+  }
+}
+
 
 @import "sections/header";
 @import "sections/hero-section";

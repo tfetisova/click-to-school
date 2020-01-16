@@ -155,6 +155,35 @@ body {
     font-weight: 500;
     font-size: 36px; }
 
+.section-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 90px;
+  color: #1A394B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+  .section-subtitle::before {
+    content: url("../img/subtitle-dots-left.svg");
+    position: absolute;
+    left: 327px;
+    top: -5px; }
+  .section-subtitle::after {
+    content: url("../img/subtitle-dots-right.svg");
+    position: absolute;
+    right: 327px;
+    top: -5px; }
+
 .page-header > .container {
   display: -webkit-box;
   display: -webkit-flex;
