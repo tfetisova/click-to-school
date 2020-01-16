@@ -14,6 +14,13 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+  url('../fonts/GothamPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 @font-face{
   font-family: 'Gotham Pro';
   src: url('../fonts/GothamPro-Bold.ttf') format('truetype'),
@@ -35,12 +42,12 @@ html{
   color: $textColor;
   font-family: $mainFont;
 }
-
 *, :after, :before{
   box-sizing: inherit;
 }
 body{
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .container{
   min-width: 320px;
@@ -117,5 +124,6 @@ body{
 }
 
 @import "sections/header";
+@import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";

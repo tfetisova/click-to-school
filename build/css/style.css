@@ -12,6 +12,12 @@
 
 @font-face {
   font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
@@ -37,7 +43,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 .container {
   min-width: 320px;
@@ -247,7 +254,7 @@ body {
 .header-menu__burger-menu {
   padding: 42px 86px;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   right: -100%;
   top: 0;
   -webkit-transition: all .7s ease-in-out;
@@ -277,6 +284,112 @@ body {
 
 .header-menu__burger-menu > li > a:first-child {
   font-weight: 500; }
+
+.map {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 1200px; }
+  .map__location {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 187px;
+    width: 350px;
+    z-index: 10; }
+  .map__container {
+    position: relative;
+    min-height: 1000px;
+    background-position: left top; }
+  .map__logo-text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.05em; }
+  .map__contacts {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 17px;
+    border: 1px solid #95D3FF;
+    width: 550px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 25px 50px; }
+    .map__contacts > ul {
+      padding-bottom: 30px; }
+    .map__contacts > ul > li {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .map__contacts-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 30px;
+    letter-spacing: 0.05em; }
+  .map__contacts-item-name {
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    padding-right: 20px;
+    padding-bottom: 30px; }
+    .map__contacts-item-name--w40 {
+      width: 40%; }
+  .map__contacts-item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.05em; }
+    .map__contacts-item-text--w55 {
+      width: 55%; }
+
+.gradient-container {
+  position: relative; }
+  .gradient-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(7%, rgba(255, 255, 255, 0.9)), color-stop(9%, rgba(255, 255, 255, 0.8)), color-stop(12%, rgba(255, 255, 255, 0.4)), color-stop(15%, rgba(255, 255, 255, 0.2)), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(80%, rgba(255, 255, 255, 0.6)), color-stop(85%, rgba(255, 255, 255, 0.8)), color-stop(90%, rgba(255, 255, 255, 0.9)), to(white));
+    background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -moz-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.9) 7%, rgba(255, 255, 255, 0.8) 9%, rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.2) 15%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.9) 90%, white 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; }
 
 .page-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(10%, rgba(255, 255, 255, 0.9)), color-stop(15%, rgba(255, 255, 255, 0.8)), color-stop(20%, rgba(255, 255, 255, 0.5)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(30%, rgba(255, 255, 255, 0))), url("../img/footer-bg.png");
