@@ -14,6 +14,13 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+  url('../fonts/GothamPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 @font-face{
   font-family: 'Gotham Pro';
   src: url('../fonts/GothamPro-Bold.ttf') format('truetype'),
@@ -35,12 +42,12 @@ html{
   color: $textColor;
   font-family: $mainFont;
 }
-
 *, :after, :before{
   box-sizing: inherit;
 }
 body{
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .container{
   min-width: 320px;
@@ -72,7 +79,7 @@ body{
     border-radius: 50px;
   }
   &__inner-text{
-    padding: 12px;
+    padding: 16px;
     width: 100%;
     background: linear-gradient(80.71deg, rgba(255, 255, 255, 0.02) 4.16%, rgba(196, 196, 196, 0) 11.39%), linear-gradient(80.71deg, rgba(255, 255, 255, 0.15) 4.16%, rgba(196, 196, 196, 0) 11.39%);
     border-radius: 50px;
@@ -92,15 +99,14 @@ body{
   }
 }
 
+//section-title style
 .section-title{
   font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 90px;
   color: #131E26;
-  display: flex;
+  @include flexCenter;
   width: 100%;
-  justify-content: center;
   position: relative;
   &::before{
     content: url('../img/Group\ 753.svg');
@@ -115,7 +121,36 @@ body{
     top: -5px;
   }
 }
+//style for subtitle
+.section-subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 90px;
+  color: #1A394B;
+  @include flexCenter;
+  width: 100%;
+  position: relative;
+  &::before{
+    content: url('../img/subtitle-dots-left.svg');
+    position: absolute;
+    left: 327px;
+    top: -5px;
+  }
+  &::after{
+    content: url('../img/subtitle-dots-right.svg');
+    position: absolute;
+    right: 327px;
+    top: -5px;
+  }
+}
+.bold-text{
+  font-weight: 500;
+}
 
 @import "sections/header";
+@import "sections/hero-section";
+@import "sections/short-about";
+@import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";
+@import "pages/about-us";
