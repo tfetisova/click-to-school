@@ -1,1 +1,6 @@
-<svg width="62" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse rx="4.468" ry="4" transform="matrix(-1 0 0 1 56.962 8)" fill="#039200"/><ellipse rx="4.468" ry="4" transform="matrix(-1 0 0 1 35.74 8)" fill="#FBFF2F"/><ellipse rx="4.468" ry="4" transform="matrix(-1 0 0 1 14.52 8)" fill="#FF0202"/><path d="M.25 8c0 4.242 4.096 7.75 9.243 7.75s9.244-3.508 9.244-7.75S14.641.25 9.493.25C4.346.25.25 3.758.25 8z" stroke="#FF0202" stroke-width=".5"/></svg>
+<svg width="62" height="16" viewBox="0 0 62 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse rx="4.46769" ry="4" transform="matrix(-1 0 0 1 56.962 8)" fill="#039200"/>
+<ellipse rx="4.46769" ry="4" transform="matrix(-1 0 0 1 35.7403 8)" fill="#FBFF2F"/>
+<ellipse rx="4.46769" ry="4" transform="matrix(-1 0 0 1 14.5196 8)" fill="#FF0202"/>
+<path d="M0.249613 8C0.249613 12.2418 4.34641 15.75 9.49346 15.75C14.6405 15.75 18.7373 12.2418 18.7373 8C18.7373 3.75819 14.6405 0.25 9.49346 0.25C4.34641 0.25 0.249613 3.75819 0.249613 8Z" stroke="#FF0202" stroke-width="0.5"/>
+</svg>

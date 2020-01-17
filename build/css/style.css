@@ -194,6 +194,9 @@ body {
 .bold-text {
   font-weight: 500; }
 
+.text-center {
+  text-align: center; }
+
 .page-header > .container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -792,8 +795,6 @@ body {
   line-height: 50px;
   color: #1A394B;
   text-indent: 50px; }
-  .page-description > p:last-child {
-    padding-top: 70px; }
 
 .description-image-bottom {
   height: 565px; }
