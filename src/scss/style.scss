@@ -1,11 +1,39 @@
 @import "variables";
 @import "mixins";
-
+@font-face{
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Light.ttf') format('truetype'),
+  url('../fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.ttf') format('truetype'),
+  url('../fonts/GothamPro.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+  url('../fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Black.ttf') format('truetype'),
+  url('../fonts/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
 html{
   height: 100%;
   box-sizing: border-box;
   font-size: 16px;
   color: $textColor;
+  font-family: $mainFont;
 }
 
 *, :after, :before{
@@ -28,7 +56,7 @@ body{
     width: 335.8px;
     border: 0.5px solid #F57AA1;
     border-radius: 50px;
-    font-family: "Gotham Pro", sans-serif;
+    font-family: $mainFont;
     text-transform: uppercase;
     font-weight: bold;
     padding: 6px;
@@ -62,9 +90,32 @@ body{
     border-radius: 50px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
-
-
-
 }
+
+.section-title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 90px;
+  color: #131E26;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  &::before{
+    content: url('../img/Group\ 753.svg');
+    position: absolute;
+    left: 65px;
+    top: -5px;
+  }
+  &::after{
+    content: url('../img/Group\ 754.svg');
+    position: absolute;
+    right: 65px;
+    top: -5px;
+  }
+}
+
 @import "sections/header";
 @import "sections/footer";
+@import "pages/sp-service";
