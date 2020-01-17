@@ -6,10 +6,7 @@ const gulp = require('gulp'),
     browserSync = require('browser-sync'),
     minifyjs = require('gulp-js-minify'),
     cleanCSS = require('gulp-clean-css'),
-    imagemin = require('gulp-imagemin'),
     rigger = require('gulp-rigger');
-
-
 
 const path = {
     build: {
@@ -85,7 +82,6 @@ const cssMinify =()=> {
 };
 const imgMinify =()=>{
     return gulp.src(path.src.img)
-        .pipe(imagemin())
         .pipe(gulp.dest(path.build.img))
 };
 const watcher = ()=> {
