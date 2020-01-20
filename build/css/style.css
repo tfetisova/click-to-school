@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gotham Pro';
   src: url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.woff") format("woff");
@@ -134,12 +135,17 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
   position: relative; }
   .section-title::before {
     content: url("../img/Group 753.svg");
@@ -153,7 +159,6 @@ body {
     top: -5px; }
 
 .section-subtitle {
-  font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 90px;
@@ -163,12 +168,17 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
   position: relative; }
   .section-subtitle::before {
     content: url("../img/subtitle-dots-left.svg");
@@ -180,6 +190,12 @@ body {
     position: absolute;
     right: 327px;
     top: -5px; }
+
+.bold-text {
+  font-weight: 500; }
+
+.text-center {
+  text-align: center; }
 
 .page-header > .container {
   display: -webkit-box;
@@ -407,6 +423,48 @@ body {
     z-index: 2;
     bottom: 0;
     right: 0; }
+    .short-about__section-img:after {
+      content: 'Ласкаво';
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 120px;
+      font-family: "Granite", serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FF3856;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(-60%, -50%);
+      -moz-transform: translate(-60%, -50%);
+      -ms-transform: translate(-60%, -50%);
+      -o-transform: translate(-60%, -50%);
+      transform: translate(-60%, -50%); }
+    .short-about__section-img:before {
+      content: 'просимо!';
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 120px;
+      font-family: "Granite", serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FF3856;
+      left: 0;
+      top: 53%;
+      -webkit-transform: translateX(-40%);
+      -moz-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+      -o-transform: translateX(-40%);
+      transform: translateX(-40%); }
   .short-about__item-wrap {
     list-style-type: none;
     counter-reset: num;
@@ -493,7 +551,12 @@ body {
   .map__container {
     position: relative;
     min-height: 1000px;
-    background-position: left top; }
+    background-position: left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   .map__logo-text {
     text-align: center;
     font-size: 20px;
@@ -512,7 +575,7 @@ body {
     z-index: 10;
     padding: 25px 50px; }
     .map__contacts > ul {
-      padding-bottom: 30px; }
+      padding-bottom: 70px; }
     .map__contacts > ul > li {
       width: 100%;
       display: -webkit-box;
@@ -728,14 +791,10 @@ body {
   height: 426px; }
 
 .page-description {
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 50px;
   color: #1A394B;
   text-indent: 50px; }
-  .page-description > p:last-child {
-    padding-top: 70px; }
 
 .description-image-bottom {
   height: 565px; }
