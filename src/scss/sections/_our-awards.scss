@@ -1,14 +1,14 @@
-.rewards-block {
-    width: 20%;
+.awards-block {
+    width: 15%;
     height: 465px;
     text-align: center;
     margin-left: 16px;
     margin-right: 16px;
 }
-.border-rewards {
+.border-awards {
     height: 354px;
 }
-.reward-image {
+.awards-image {
     width: 195px;
     height: 331px;
     background-repeat: no-repeat;
@@ -16,14 +16,14 @@
     background-position: top center;
     margin-top: 10px;
 }
-.rewards-flex {
+.awards-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 55px 10px;
 }
-.name-of-reward {
-    font-size: 18px;
+.name-of-awards {
+    font-size: 16px;
     line-height: 30px;
 }
