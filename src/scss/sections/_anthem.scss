@@ -1,0 +1,28 @@
+.anthem{
+  background-image: url("../img/anthem-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after{
+    @include gradient-bottom;
+  }
+  &__text{
+    align-self: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Marck Script', cursive;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    color: #484444;
+    &>p{
+      margin-bottom: 40px;
+    }
+  }
+  &>.container{
+    padding-bottom: 600px;
+    @include flexCenter;
+    flex-direction: column;
+  }
+}
