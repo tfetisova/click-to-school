@@ -109,13 +109,13 @@ body{
   width: 100%;
   position: relative;
   &::before{
-    content: url('../img/Group\ 753.svg');
+    content: url('../img/Group 753.svg');
     position: absolute;
     left: 65px;
     top: -5px;
   }
   &::after{
-    content: url('../img/Group\ 754.svg');
+    content: url('../img/Group 754.svg');
     position: absolute;
     right: 65px;
     top: -5px;
@@ -130,6 +130,7 @@ body{
   @include flexCenter;
   width: 100%;
   position: relative;
+  z-index: 3;
   &::before{
     content: url('../img/subtitle-dots-left.svg');
     position: absolute;
@@ -154,7 +155,10 @@ body{
 @import "sections/header";
 @import "sections/hero-section";
 @import "sections/short-about";
+@import "sections/anthem";
+@import "sections/news";
+@import "sections/our-team";
 @import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";
-@import "sections/our-team";
+
