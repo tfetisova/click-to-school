@@ -1,0 +1,29 @@
+.rewards-block {
+    width: 20%;
+    height: 465px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.border-rewards {
+    height: 354px;
+}
+.reward-image {
+    width: 195px;
+    height: 331px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    margin-top: 10px;
+}
+.rewards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 10px;
+}
+.name-of-reward {
+    font-size: 18px;
+    line-height: 30px;
+}

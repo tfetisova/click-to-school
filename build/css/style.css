@@ -839,7 +839,6 @@ body {
   margin-top: 35px; }
 
 .team-member {
-  width: 246px;
   height: 427px;
   text-align: center; }
 
@@ -861,11 +860,6 @@ body {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  width: 241px;
-  height: 356px;
   background: #FFFFFF;
   border: 0.5px solid #95D3FF;
   -webkit-box-sizing: border-box;
@@ -884,6 +878,13 @@ body {
     position: absolute;
     left: 89px;
     top: -2px; }
+
+.border-of-image.border-team {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 241px;
+  height: 356px; }
 
 .photo-of-member {
   width: 197px;
@@ -909,3 +910,49 @@ body {
   font-size: 22px;
   line-height: 30px;
   color: #1A394B; }
+
+.rewards-block {
+  width: 20%;
+  height: 465px;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px; }
+
+.border-rewards {
+  height: 354px; }
+
+.reward-image {
+  width: 195px;
+  height: 331px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: top center;
+  margin-top: 10px; }
+
+.rewards-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 55px 10px; }
+
+.name-of-reward {
+  font-size: 18px;
+  line-height: 30px; }
