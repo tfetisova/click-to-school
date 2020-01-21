@@ -17,11 +17,11 @@
     letter-spacing: 0.1em;
     color: #484444;
     &>p{
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
   &>.container{
-    padding-bottom: 850px;
+    padding-bottom: 600px;
     @include flexCenter;
     flex-direction: column;
   }

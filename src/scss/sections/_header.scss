@@ -77,7 +77,6 @@
   &__burger-menu.active{
     opacity: 1;
     right: 0;
-
     background-color: #fff;
   }
   &__burger-menu>li a:link,
@@ -87,5 +86,11 @@
   }
   &__burger-menu>li>a:first-child{
     font-weight: 500;
+  }
+  &__burger-sub-menu{
+    display: none;
+    &.active{
+      display: block;
+    }
   }
 }
