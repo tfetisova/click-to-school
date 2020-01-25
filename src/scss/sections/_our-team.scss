@@ -14,7 +14,7 @@
 .our-team-flex-container {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 35px;
 }
 .team-member {
@@ -37,7 +37,7 @@
         width: 63px;
         height: 3px;
         position: absolute; 
-        left: 89px;
+        left: auto;
         top: -2px;
     }
 }
