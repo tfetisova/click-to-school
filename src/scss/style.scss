@@ -51,7 +51,7 @@ body{
 }
 .container{
   min-width: 320px;
-  max-width: 1270px;
+  max-width: 1170px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -127,39 +127,39 @@ body{
   font-size: 36px;
   line-height: 90px;
   color: #1A394B;
-  @include flexCenter;
   width: 100%;
+  text-align: center;
   position: relative;
   z-index: 3;
-  &::before{
+
+  &::before {
     content: url('../img/subtitle-dots-left.svg');
-    position: absolute;
-    left: 327px;
-    top: -5px;
+    margin-right: 5%;
   }
-  &::after{
+
+  &::after {
     content: url('../img/subtitle-dots-right.svg');
-    position: absolute;
-    right: 327px;
-    top: -5px;
+    margin-left: 5%;
+  }
+
+  .bold-text {
+    font-weight: 500;
+  }
+
+  .text-center {
+    text-align: center;
   }
 }
-.bold-text{
-  font-weight: 500;
-}
-
-.text-center {
- text-align: center;
-}
-
 @import "sections/header";
 @import "sections/hero-section";
 @import "sections/short-about";
 @import "sections/anthem";
 @import "sections/news";
+@import "sections/photo-gallery";
+@import "sections/documents";
 @import "sections/our-team";
+@import "sections/our-awards";
+@import "sections/links";
 @import "sections/map";
 @import "sections/footer";
 @import "pages/sp-service";
-@import "sections/our-awards";
-@import "sections/links";

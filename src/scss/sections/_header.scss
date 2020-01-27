@@ -12,7 +12,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   &--header {
-    margin-right: 52px;
+    margin-right: 22px;
   }
   &--footer{
     margin-left: 20px;
@@ -24,7 +24,7 @@
     @include flexCenter;
   }
   &__main>li{
-    margin-right: 25px;
+    margin-right: 20px;
   }
   &__main>li>a:link,
   &__main>li>a:visited,
@@ -36,10 +36,10 @@
     color: $textColor;
   }
   &__tel{
-    margin-right: 15px;
+    margin-right: 10px;
   }
   &__tel>li>a{
-    font-size: 13px;
+    font-size: 12px;
     line-height: 25px;
     letter-spacing: 0.05em;
   }

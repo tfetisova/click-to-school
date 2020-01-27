@@ -8,6 +8,10 @@
   border-image: linear-gradient(#77D2FF 25%, rgba(246, 88, 107, 0.57) 100%);
   border-image-slice: 1;
 }
+@mixin background{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @mixin gradient-top-bottom{
   content:'';
   position: absolute;

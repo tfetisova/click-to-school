@@ -1,6 +1,5 @@
 .hero{
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
   padding-top: 83px;
   padding-bottom: 100px;
   position: relative;

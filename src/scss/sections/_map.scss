@@ -5,8 +5,7 @@
     position: relative;
     min-height:562px;
     background-position: left top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background;
     &:after{
       @include gradient-bottom;
     }
