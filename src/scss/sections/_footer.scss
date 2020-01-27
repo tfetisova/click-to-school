@@ -8,8 +8,7 @@
           rgba(255,255,255, .2) 25%,
           rgba(255,255,255, 0) 30%
   ), url('../img/footer-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
 
   &>.container{
     position: relative;

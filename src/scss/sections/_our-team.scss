@@ -22,9 +22,8 @@
     text-align: center;
 }
 .border-of-image {
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    align-items: center;
     background: #FFFFFF;
     border: 0.5px solid #95D3FF;
     box-sizing: border-box;
