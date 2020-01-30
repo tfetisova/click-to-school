@@ -1,7 +1,6 @@
 .anthem{
   background-image: url("../img/anthem-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
   position: relative;
   &:after{
     @include gradient-bottom;
@@ -21,7 +20,7 @@
     }
   }
   &>.container{
-    padding-bottom: 600px;
+    padding-bottom: 850px;
     @include flexCenter;
     flex-direction: column;
   }

@@ -3,8 +3,7 @@
   padding-bottom: 125px;
   position: relative;
   background-image: url('../img/short-about-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
   &:after{
     @include gradient-top-bottom;
   }
